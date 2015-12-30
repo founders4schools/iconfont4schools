@@ -1,0 +1,26 @@
+{
+  "name": "iconfont4schools",
+  "authors": [
+    "Bruno Alla <bruno.alla@founders4schools.org.uk>"
+  ],
+  "description": "Custom font providing the iconography for Founders4Schools",
+  "main": "css/iconfont4s.css",
+  "moduleType": [],
+  "keywords": [
+    "css",
+    "font",
+    "icon",
+    "founders4schools"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.founders4schools.org.uk",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
+  ]
+}

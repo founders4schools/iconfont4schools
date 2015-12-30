@@ -1,0 +1,28 @@
+/* Sizing Fontawesome classes for demo purposes */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+
+.list-inline>li{
+  width: calc(33% - 10px);
+  text-align: center;
+}
+
+.list-inline>li:nth-child(odd) {
+  background: #999999;
+  color: #ffffff;
+}
