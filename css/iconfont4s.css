@@ -80,9 +80,6 @@
 .if4s-psychology:before {
   content: "\77";
 }
-.if4s-bulb:before {
-  content: "\78";
-}
 .if4s-students:before {
   content: "\79";
 }
@@ -163,4 +160,7 @@
 }
 .if4s-school-generic:before {
   content: "\6b";
+}
+.if4s-bulb:before {
+  content: "\6e";
 }
