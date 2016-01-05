@@ -25,5 +25,5 @@ This is quite manual, and involve several steps:
 
 ## TODO
 
-* Make the whole thing more automated: not rely on Fontastic?
+* Make the whole thing more automated: not rely on Fontastic? There are [several NPM packages](https://www.npmjs.com/search?q=font+svg), and [this one](https://www.npmjs.com/package/gulp-iconfont) seems to do the job.
 * Script to create a new release?
