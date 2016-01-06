@@ -1,0 +1,36 @@
+{
+  "name": "iconfont4schools",
+  "version": "1.0.0",
+  "description": "Font for F4S iconography",
+  "main": "gulp.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/founders4schools/iconfont4schools.git"
+  },
+  "keywords": [
+    "font",
+    "founder",
+    "school",
+    "icon"
+  ],
+  "author": "Bruno Alla <bruno.alla@founders4schools.org.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/founders4schools/iconfont4schools/issues"
+  },
+  "homepage": "https://github.com/founders4schools/iconfont4schools#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-iconfont": "^5.0.1",
+    "gulp-rename": "^1.2.2",
+    "swig": "^1.4.2"
+  }
+}
