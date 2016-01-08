@@ -17,150 +17,204 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.if4s-parent:before {
-  content: "\61";
-}
-.if4s-speaker:before {
-  content: "\62";
-}
-.if4s-teacher:before {
-  content: "\63";
-}
-.if4s-govmt:before {
-  content: "\64";
-}
-.if4s-duedil:before {
-  content: "\65";
-}
-.if4s-edmodo:before {
-  content: "\66";
-}
-.if4s-step-3:before {
-  content: "\67";
-}
-.if4s-step-1:before {
-  content: "\68";
-}
-.if4s-physed:before {
-  content: "\69";
-}
-.if4s-physics:before {
-  content: "\6a";
-}
-.if4s-biology:before {
-  content: "\6c";
-}
-.if4s-literature:before {
-  content: "\6d";
-}
-.if4s-chemistry:before {
-  content: "\6f";
-}
-.if4s-science:before {
-  content: "\70";
-}
-.if4s-sociology:before {
-  content: "\71";
-}
-.if4s-award:before {
-  content: "\72";
-}
-.if4s-geography:before {
-  content: "\73";
-}
-.if4s-history:before {
-  content: "\74";
-}
-.if4s-network:before {
-  content: "\75";
-}
-.if4s-female:before {
-  content: "\76";
-}
-.if4s-psychology:before {
-  content: "\77";
-}
-.if4s-students:before {
-  content: "\79";
-}
-.if4s-grid:before {
-  content: "\7a";
-}
-.if4s-law:before {
-  content: "\41";
-}
-.if4s-citizenship:before {
-  content: "\42";
-}
-.if4s-house:before {
-  content: "\44";
-}
-.if4s-computing:before {
-  content: "\46";
-}
-.if4s-economics:before {
-  content: "\47";
-}
-.if4s-engineering:before {
-  content: "\48";
-}
-.if4s-maths:before {
-  content: "\49";
-}
-.if4s-medicine:before {
-  content: "\4a";
-}
-.if4s-politics:before {
-  content: "\4b";
-}
-.if4s-role-model:before {
-  content: "\4c";
-}
-.if4s-religion:before {
-  content: "\4e";
-}
-.if4s-media:before {
-  content: "\50";
-}
-.if4s-music:before {
-  content: "\51";
-}
-.if4s-design:before {
-  content: "\52";
-}
-.if4s-step-2:before {
-  content: "\53";
-}
-.if4s-tech:before {
-  content: "\54";
-}
-.if4s-man:before {
-  content: "\55";
-}
-.if4s-arts:before {
-  content: "\56";
-}
-.if4s-business:before {
-  content: "\57";
-}
-.if4s-list:before {
-  content: "\58";
-}
-.if4s-paint:before {
-  content: "\59";
-}
-.if4s-marketing:before {
-  content: "\5a";
-}
-.if4s-philosophy:before {
-  content: "\30";
-}
-.if4s-languages:before {
-  content: "\31";
-}
-.if4s-school-generic:before {
-  content: "\6b";
-}
+
 .if4s-bulb:before {
-  content: "\6e";
+  content: "\EA01";
 }
+
+.if4s-arts:before {
+  content: "\EA02";
+}
+
+.if4s-parent:before {
+  content: "\EA03";
+}
+
+.if4s-school-generic:before {
+  content: "\EA04";
+}
+
+.if4s-speaker:before {
+  content: "\EA05";
+}
+
+.if4s-teacher:before {
+  content: "\EA06";
+}
+
+.if4s-award:before {
+  content: "\EA07";
+}
+
+.if4s-biology:before {
+  content: "\EA08";
+}
+
+.if4s-business:before {
+  content: "\EA09";
+}
+
+.if4s-chemistry:before {
+  content: "\EA0A";
+}
+
+.if4s-citizenship:before {
+  content: "\EA0B";
+}
+
+.if4s-computing:before {
+  content: "\EA0C";
+}
+
+.if4s-design:before {
+  content: "\EA0D";
+}
+
+.if4s-duedil:before {
+  content: "\EA0E";
+}
+
+.if4s-economics:before {
+  content: "\EA0F";
+}
+
+.if4s-edmodo:before {
+  content: "\EA10";
+}
+
+.if4s-engineering:before {
+  content: "\EA11";
+}
+
+.if4s-female:before {
+  content: "\EA12";
+}
+
+.if4s-geography:before {
+  content: "\EA13";
+}
+
+.if4s-govmt:before {
+  content: "\EA14";
+}
+
+.if4s-grid:before {
+  content: "\EA15";
+}
+
+.if4s-history:before {
+  content: "\EA16";
+}
+
+.if4s-house:before {
+  content: "\EA17";
+}
+
+.if4s-languages:before {
+  content: "\EA18";
+}
+
+.if4s-law:before {
+  content: "\EA19";
+}
+
+.if4s-list:before {
+  content: "\EA1A";
+}
+
+.if4s-literature:before {
+  content: "\EA1B";
+}
+
+.if4s-male:before {
+  content: "\EA1C";
+}
+
+.if4s-marketing:before {
+  content: "\EA1D";
+}
+
+.if4s-maths:before {
+  content: "\EA1E";
+}
+
+.if4s-media:before {
+  content: "\EA1F";
+}
+
+.if4s-medicine:before {
+  content: "\EA20";
+}
+
+.if4s-music:before {
+  content: "\EA21";
+}
+
+.if4s-network:before {
+  content: "\EA22";
+}
+
+.if4s-paint:before {
+  content: "\EA23";
+}
+
+.if4s-philosophy:before {
+  content: "\EA24";
+}
+
+.if4s-physics:before {
+  content: "\EA25";
+}
+
+.if4s-psychology:before {
+  content: "\EA26";
+}
+
+.if4s-religion:before {
+  content: "\EA27";
+}
+
+.if4s-science:before {
+  content: "\EA28";
+}
+
+.if4s-sociology:before {
+  content: "\EA29";
+}
+
+.if4s-step-1:before {
+  content: "\EA2A";
+}
+
+.if4s-step-2:before {
+  content: "\EA2B";
+}
+
+.if4s-step-3:before {
+  content: "\EA2C";
+}
+
+.if4s-students:before {
+  content: "\EA2D";
+}
+
+.if4s-tech:before {
+  content: "\EA2E";
+}
+
+.if4s-politics:before {
+  content: "\EA30";
+}
+
+.if4s-physed:before {
+  content: "\EA31";
+}
+
+.if4s-role-model:before {
+  content: "\EA32";
+}
+
+.if4s-careers-fair:before {
+  content: "\EA33";
+}
+

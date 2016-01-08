@@ -21,6 +21,9 @@
     "bower_components",
     "test",
     "tests",
-    "examples"
+    "examples",
+    "assets",
+    "package.json",
+    "README.md"
   ]
 }
