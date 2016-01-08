@@ -24,6 +24,7 @@
     "examples",
     "assets",
     "package.json",
+    "gulpfile.js",
     "README.md"
   ]
 }
