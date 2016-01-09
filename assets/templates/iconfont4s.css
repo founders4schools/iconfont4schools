@@ -20,5 +20,4 @@
 {% for glyph in glyphs %}
 .{{ className }}-{{ glyph.name }}:before {
   content: "\{{ glyph.codepoint }}";
-}
-{% endfor %}
+}{% endfor %}

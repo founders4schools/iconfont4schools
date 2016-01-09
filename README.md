@@ -22,27 +22,24 @@ the needed dependencies with [NPM](https://www.npmjs.com):
 
 ### Adding a new icon    
 
-It takes just 3 steps:
+It takes just 2 steps:
 
-* Get a SVG version of the image, and save it to `assets/icons` with clean and
-unique name (the 'uXXXX-' prefix is added automatically).
-* Run `gulp build`, which does the hard work:
+* Get a SVG version of the image, and save it to `assets/` with clean and
+unique name.
+* Run `gulp build` (there is also a `watch` task), which does the hard work:
+  * Compress the SVG and move the output to `assets/icons/`
   * Generating font files under `fonts/`
   * Generating CSS file under `css/`
   * Minify CSS file for you
-* Add your new icon(s) to the example page to showcase and test it.
+  * Generating the updated example page
+* Open `examples/index.html` and verify that your new icon is present and
+renders as expected
 
 ### Creating a new release
 
 The package is just meant to be referenced from the Github shorthand, you just
-need to create a new release on Github, but make sure to keep a clean
-versioning:
+need to create a tag on Github, but make sure to keep a clean versioning:
 
 * Fixing bug with icon: increase patch digit
 * New icon: increase the minor digit
 * Breaking change: increase major digit
-
-## TODO
-
-* Get the examples page generated automatically when building
-* Add a `watch` gulp task

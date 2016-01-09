@@ -3,9 +3,25 @@ var gulp = require('gulp'),
   consolidate = require('gulp-consolidate'),
   cssnano = require('gulp-cssnano'),
   rename = require('gulp-rename'),
+  svgmin = require('gulp-svgmin'),
+  watch = require('gulp-watch'),
+  batch = require('gulp-batch'),
   runTimestamp = Math.round(Date.now()/1000);
 
-gulp.task('iconfont', function(){
+gulp.task('svg-min', function () {
+  return gulp.src(['assets/*.svg'])
+  .pipe(svgmin())
+  .pipe(gulp.dest('assets/icons/'));
+});
+
+function glyphToUnicode(glyph){
+  return {
+    name: glyph.name,
+    codepoint: glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase()
+  }
+}
+
+gulp.task('iconfont', ['svg-min'], function(){
   return gulp.src(['assets/icons/*.svg'])
     .pipe(iconfont({
       fontName: 'iconfont4s', // required
@@ -16,19 +32,24 @@ gulp.task('iconfont', function(){
       timestamp: runTimestamp, // recommended to get consistent builds when watching files
     }))
     .on('glyphs', function(glyphs, options) {
+      // generate CSS
       gulp.src('assets/templates/iconfont4s.css')
         .pipe(consolidate('swig', {
-          glyphs: glyphs.map(function(glyph) {
-            return {
-              name: glyph.name,
-              codepoint: glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase()
-            }
-          }),
+          glyphs: glyphs.map(glyphToUnicode),
           fontName: 'iconfont4s',
           fontPath: '../fonts/',
           className: 'if4s'
         }))
         .pipe(gulp.dest('css/'));
+
+      // Generate example page
+      gulp.src('assets/templates/index.html')
+        .pipe(consolidate('swig', {
+          glyphs: glyphs.map(glyphToUnicode),
+          cssPath: '../css/iconfont4s.min.css',
+          className: 'if4s'
+        }))
+        .pipe(gulp.dest('examples/'));
     })
     .pipe(gulp.dest('fonts/'));
 });
@@ -41,3 +62,9 @@ gulp.task('minify-css', ['iconfont'], function() {
 });
 
 gulp.task('build', ['iconfont', 'minify-css']);
+
+gulp.task('watch', function () {
+  watch(['assets/templates/*', 'assets/*.svg'], batch(function (events, done) {
+    gulp.start('build', done);
+  }));
+});
