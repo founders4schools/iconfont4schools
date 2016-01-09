@@ -27,10 +27,13 @@
   "homepage": "https://github.com/founders4schools/iconfont4schools#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-batch": "^1.0.5",
     "gulp-consolidate": "^0.1.2",
     "gulp-cssnano": "^2.1.0",
     "gulp-iconfont": "^5.0.1",
     "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-watch": "^4.3.5",
     "swig": "^1.4.2"
   }
 }

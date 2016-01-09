@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Example usage of icons</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./example.css">
+    <link rel="stylesheet" href="{{ cssPath }}">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row">
+        <h1>Examples</h1>
+
+        <p>
+          This page presents all the symbols with the css class to use for each of them. The usage is very similar to FontAwesome:
+        </p>
+
+        <pre>&lt;i class="{{ className }} {{ className }}-step-1"&gt;&lt;i&gt;</pre>
+      </div>
+
+      <div class="row">
+        <h2>List of icons</h2>
+
+        <ul class="list-inline">
+          {% for glyph in glyphs %}
+          <li>
+            <h3>{{ className }}-{{ glyph.name }}</h3>
+            <div>
+              <i class="{{ className }} {{ className }}-{{ glyph.name }}"></i>
+              <i class="{{ className }} {{ className }}-{{ glyph.name }} fa-2x"></i>
+              <i class="{{ className }} {{ className }}-{{ glyph.name }} fa-3x"></i>
+              <i class="{{ className }} {{ className }}-{{ glyph.name }} fa-4x"></i>
+              <i class="{{ className }} {{ className }}-{{ glyph.name }} fa-5x"></i>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>
