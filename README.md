@@ -1,3 +1,5 @@
+[![devDependency Status](https://david-dm.org/founders4schools/iconfont4schools/dev-status.svg)](https://david-dm.org/founders4schools/iconfont4schools#info=devDependencies)
+
 # IconFont4Schools
 
 Custom font providing the iconography for
