@@ -4,7 +4,7 @@
 
 Custom font providing the iconography for
 [Founders4Schools](http://www.founders4schools.org.uk). Made from SVG images
-coming from [flaticon.com](http://www.flaticon.com/) and from around the web.
+coming from [flaticon.com](http://www.flaticon.com/) and from around the web. See available icons [on the (very basic) example page](https://rawgit.com/founders4schools/iconfont4schools/master/examples/index.html).
 
 ## Installation
 
