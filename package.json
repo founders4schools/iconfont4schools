@@ -32,7 +32,6 @@
     "gulp-cssnano": "^2.1.0",
     "gulp-iconfont": "^5.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-svgmin": "^1.2.0",
     "gulp-watch": "^4.3.5",
     "swig": "^1.4.2"
   }

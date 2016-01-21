@@ -3,16 +3,9 @@ var gulp = require('gulp'),
   consolidate = require('gulp-consolidate'),
   cssnano = require('gulp-cssnano'),
   rename = require('gulp-rename'),
-  svgmin = require('gulp-svgmin'),
   watch = require('gulp-watch'),
   batch = require('gulp-batch'),
   runTimestamp = Math.round(Date.now()/1000);
-
-gulp.task('svg-min', function () {
-  return gulp.src(['assets/*.svg'])
-  .pipe(svgmin())
-  .pipe(gulp.dest('assets/icons/'));
-});
 
 function glyphToUnicode(glyph){
   return {
@@ -21,7 +14,7 @@ function glyphToUnicode(glyph){
   }
 }
 
-gulp.task('iconfont', ['svg-min'], function(){
+gulp.task('iconfont', function(){
   return gulp.src(['assets/icons/*.svg'])
     .pipe(iconfont({
       fontName: 'iconfont4s', // required

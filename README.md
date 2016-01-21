@@ -26,10 +26,10 @@ the needed dependencies with [NPM](https://www.npmjs.com):
 
 It takes just 2 steps:
 
-* Get a SVG version of the image, and save it to `assets/` with clean and
+* Get a SVG version of the image, and save it to `assets/icons/` with clean and
 unique name.
 * Run `gulp build` (there is also a `watch` task), which does the hard work:
-  * Compress the SVG and move the output to `assets/icons/`
+  * Assign a character and add a prefix to your new icon.
   * Generating font files under `fonts/`
   * Generating CSS file under `css/`
   * Minify CSS file for you
