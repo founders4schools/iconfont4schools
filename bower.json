@@ -26,5 +26,6 @@
     "package.json",
     "gulpfile.js",
     "README.md"
-  ]
+  ],
+  "version": "2.3.0"
 }
