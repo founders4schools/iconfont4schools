@@ -174,3 +174,9 @@
 .if4s-lightbulb:before {
   content: "\EA34";
 }
+.if4s-school:before {
+  content: "\EA35";
+}
+.if4s-students-half:before {
+  content: "\EA36";
+}
