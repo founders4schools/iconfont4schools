@@ -1,4 +1,4 @@
-[![devDependency Status](https://david-dm.org/founders4schools/iconfont4schools/dev-status.svg)](https://david-dm.org/founders4schools/iconfont4schools#info=devDependencies)
+[![devDependency Status](https://david-dm.org/founders4schools/iconfont4schools/dev-status.svg)](https://david-dm.org/founders4schools/iconfont4schools#info=devDependencies) [![Build Status](https://travis-ci.org/founders4schools/iconfont4schools.svg?branch=master)](https://travis-ci.org/founders4schools/iconfont4schools)
 
 # IconFont4Schools
 
