@@ -1,3 +1,7 @@
 language: node_js
 node_js:
   - "5.1"
+
+notifications:
+  email: false
+  slack: f4s:u17h2Cc7RhhHNtypnAu7jbgY
