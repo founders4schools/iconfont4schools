@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "test"
+    "test": "gulp build"
   },
   "repository": {
     "type": "git",
