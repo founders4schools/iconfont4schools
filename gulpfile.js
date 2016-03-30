@@ -19,7 +19,7 @@ gulp.task('iconfont', function(){
     .pipe(iconfont({
       fontName: 'iconfont4s', // required
       normalize: true,
-      appendUnicode: true,
+      prependUnicode: true,
       fontHeight: 1001,
       formats: ['ttf', 'eot', 'woff', 'svg'], // 'woff2' and 'svg' are available
       timestamp: runTimestamp, // recommended to get consistent builds when watching files
