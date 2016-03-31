@@ -180,3 +180,9 @@
 .if4s-students-half:before {
   content: "\EA36";
 }
+.if4s-email:before {
+  content: "\EA37";
+}
+.if4s-phone:before {
+  content: "\EA38";
+}
