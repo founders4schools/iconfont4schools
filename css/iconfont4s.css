@@ -201,3 +201,6 @@
 .if4s-signin:before {
   content: "\EA3D";
 }
+.if4s-certificate:before {
+  content: "\EA3E";
+}
