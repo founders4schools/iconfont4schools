@@ -189,3 +189,15 @@
 .if4s-phone:before {
   content: "\EA39";
 }
+.if4s-alert:before {
+  content: "\EA3A";
+}
+.if4s-arrow-up:before {
+  content: "\EA3B";
+}
+.if4s-register:before {
+  content: "\EA3C";
+}
+.if4s-signin:before {
+  content: "\EA3D";
+}
