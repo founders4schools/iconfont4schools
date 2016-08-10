@@ -45,9 +45,9 @@ need to create a tag on Github, but make sure to keep a clean versioning:
 * Fixing bug with icon: increase patch digit
 * New icon: increase the minor digit
 * Breaking change: increase major digit
- 
-The easier way to do it is with the `bower verson` command:
+
+The easier way to do it is with the `bower version` command:
 
     bower version [ major | minor | patch ]
 
-Then push your changes ande tag you just created.
+Then push your changes and tag you just created.
