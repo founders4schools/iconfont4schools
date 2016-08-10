@@ -204,3 +204,6 @@
 .if4s-certificate:before {
   content: "\EA3E";
 }
+.if4s-handshake:before {
+  content: "\EA3F";
+}
