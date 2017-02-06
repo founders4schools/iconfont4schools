@@ -177,6 +177,9 @@
 .if4s-school:before {
   content: "\EA35";
 }
+.if4s-my-wow:before {
+  content: "\EA36";
+}
 .if4s-calendar:before {
   content: "\EA37";
 }
