@@ -49,6 +49,13 @@ gulp.task('iconfont', function () {
     .pipe(gulp.dest('fonts/'));
 });
 
+// Generate a SCSS file that can be included in another build
+gulp.task('gen-scss', ['iconfont'], function () {
+  return gulp.src('./css/iconfont4s.css')
+    .pipe(rename({extname: '.scss'}))
+    .pipe(gulp.dest('./css/'));
+});
+
 gulp.task('minify-css', ['iconfont'], function () {
   return gulp.src('./css/iconfont4s.css')
     .pipe(cssnano())
@@ -56,7 +63,7 @@ gulp.task('minify-css', ['iconfont'], function () {
     .pipe(gulp.dest('./css/'));
 });
 
-gulp.task('build', ['iconfont', 'minify-css']);
+gulp.task('build', ['iconfont', 'gen-scss', 'minify-css']);
 
 gulp.task('watch', function () {
   watch(['assets/templates/*', 'assets/*.svg'], batch(function (events, done) {
