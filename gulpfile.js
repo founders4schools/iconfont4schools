@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   iconfont = require('gulp-iconfont'),
   consolidate = require('gulp-consolidate'),
   cssnano = require('gulp-cssnano'),
+  sass = require('gulp-sass'),
   rename = require('gulp-rename'),
   watch = require('gulp-watch'),
   batch = require('gulp-batch'),
@@ -27,15 +28,15 @@ gulp.task('iconfont', function () {
       timestamp: runTimestamp // recommended to get consistent builds when watching files
     }))
     .on('glyphs', function (glyphs) {
-      // generate CSS
-      gulp.src('assets/templates/iconfont4s.css')
+      // generate SCSS
+      gulp.src('assets/templates/iconfont4s.scss')
         .pipe(consolidate('swig', {
           glyphs: glyphs.map(glyphToUnicode),
           fontName: 'iconfont4s',
           fontPath: '../fonts/',
           className: 'if4s'
         }))
-        .pipe(gulp.dest('css/'));
+        .pipe(gulp.dest('scss/'));
 
       // Generate example page
       gulp.src('assets/templates/index.html')
@@ -49,21 +50,17 @@ gulp.task('iconfont', function () {
     .pipe(gulp.dest('fonts/'));
 });
 
-// Generate a SCSS file that can be included in another build
-gulp.task('gen-scss', ['iconfont'], function () {
-  return gulp.src('./css/iconfont4s.css')
-    .pipe(rename({extname: '.scss'}))
-    .pipe(gulp.dest('./css/'));
-});
-
-gulp.task('minify-css', ['iconfont'], function () {
-  return gulp.src('./css/iconfont4s.css')
+// Generate a compiled CSS file that can be used directly
+gulp.task('gen-css', ['iconfont'], function () {
+  return gulp.src('./scss/iconfont4s.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./css/'))
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./css/'));
 });
 
-gulp.task('build', ['iconfont', 'gen-scss', 'minify-css']);
+gulp.task('build', ['iconfont', 'gen-css']);
 
 gulp.task('watch', function () {
   watch(['assets/templates/*', 'assets/*.svg'], batch(function (events, done) {

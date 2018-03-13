@@ -1,13 +1,19 @@
 @charset "UTF-8";
+$if4s-font-path: '../fonts/' !default;
+$if4s-font-name: 'iconfont4s' !default;
+
 @font-face {
-  font-family: "iconfont4s";
-  src: url("../fonts/iconfont4s.eot");
-  src: url("../fonts/iconfont4s.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont4s.woff") format("woff"), url("../fonts/iconfont4s.ttf") format("truetype"), url("../fonts/iconfont4s.svg#iconfont4s") format("svg");
+  font-family: '#{$if4s-font-name}';
+  src: url('#{$if4s-font-path}iconfont4s.eot');
+  src: url('#{$if4s-font-path}iconfont4s.eot?#iefix') format('embedded-opentype'),
+       url('#{$if4s-font-path}iconfont4s.woff') format('woff'),
+       url('#{$if4s-font-path}iconfont4s.ttf') format('truetype'),
+       url('#{$if4s-font-path}iconfont4s.svg#iconfont4s') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 .if4s {
-  font-family: "iconfont4s" !important;
+  font-family: '#{$if4s-font-name}' !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -210,9 +216,9 @@
 .if4s-art:before {
   content: "\EA40";
 }
-.if4s-technology:before {
-  content: "\EA42";
-}
 .if4s-designtech:before {
   content: "\EA41";
+}
+.if4s-technology:before {
+  content: "\EA42";
 }
