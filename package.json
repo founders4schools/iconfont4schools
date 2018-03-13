@@ -1,6 +1,6 @@
 {
   "name": "iconfont4schools",
-  "version": "2.10.0",
+  "version": "3.0.0",
   "description": "Font for F4S iconography",
   "main": "gulp.js",
   "directories": {
