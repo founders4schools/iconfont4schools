@@ -28,7 +28,7 @@ gulp.task('iconfont', function () {
       timestamp: runTimestamp // recommended to get consistent builds when watching files
     }))
     .on('glyphs', function (glyphs) {
-      // generate SCSS
+      // generate SCSS & CSS
       gulp.src('assets/templates/iconfont4s.scss')
         .pipe(consolidate('swig', {
           glyphs: glyphs.map(glyphToUnicode),
@@ -36,7 +36,12 @@ gulp.task('iconfont', function () {
           fontPath: '../fonts/',
           className: 'if4s'
         }))
-        .pipe(gulp.dest('scss/'));
+        .pipe(gulp.dest('./scss/'))
+        .pipe(sass())
+        .pipe(gulp.dest('./css/'))
+        .pipe(cssnano())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./css/'));
 
       // Generate example page
       gulp.src('assets/templates/index.html')
@@ -50,17 +55,7 @@ gulp.task('iconfont', function () {
     .pipe(gulp.dest('fonts/'));
 });
 
-// Generate a compiled CSS file that can be used directly
-gulp.task('gen-css', ['iconfont'], function () {
-  return gulp.src('./scss/iconfont4s.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./css/'))
-    .pipe(cssnano())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./css/'));
-});
-
-gulp.task('build', ['iconfont', 'gen-css']);
+gulp.task('build', ['iconfont']);
 
 gulp.task('watch', function () {
   watch(['assets/templates/*', 'assets/*.svg'], batch(function (events, done) {
