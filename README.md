@@ -48,8 +48,11 @@ need to create a tag on Github, but make sure to keep a clean versioning:
 * New icon: increase the minor digit
 * Breaking change: increase major digit
 
-The easier way to do it is with the `bower version` command:
+We use [`version-bump-prompt`](https://www.npmjs.com/package/version-bump-prompt) for that,
+which is installed locally. You can run it directly with [npx](https://github.com/zkat/npx):
 
-    bower version [ major | minor | patch ]
+    npx bump --commit --tag [--major|--minor|--patch ]
 
-Then push your changes and tag you just created.
+As you might expect this will commit & tag your new version. Omit the commit/tag options 
+if you want to look at what's going on. Once it looks good, push your changes with the 
+tag you just created.
