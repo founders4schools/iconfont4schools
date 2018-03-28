@@ -8,9 +8,11 @@ coming from [flaticon.com](http://www.flaticon.com/) and from around the web. Se
 
 ## Installation
 
-This is bower installable using the github shorthand:
+This is bower and npm installable using the github shorthand:
 
-    bower install --save founders4schools/iconfont4schools    
+    bower install --save founders4schools/iconfont4schools  
+    npm install --save founders4schools/iconfont4schools
+    yarn add founders4schools/iconfont4schools 
 
 ## Working on this repository
 
