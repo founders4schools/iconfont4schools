@@ -213,3 +213,6 @@
 
 .if4s-technology:before {
   content: "\EA42"; }
+
+.if4s-voucher:before {
+  content: "\EA43"; }
