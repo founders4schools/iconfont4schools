@@ -4,4 +4,8 @@ node_js:
 
 notifications:
   email: false
-  slack: f4s:u17h2Cc7RhhHNtypnAu7jbgY
+  slack:
+    rooms:
+      - f4s:u17h2Cc7RhhHNtypnAu7jbgY#dev
+    on_success: change
+    on_failure: always
