@@ -2,7 +2,7 @@
 
 npm run build
 
-FILES_CHANGED=$(git diff --name-only | grep -v 'fonts')
+FILES_CHANGED=$(git diff --name-only | grep -v 'fonts' |  grep -v "package.*.json")
 
 if [[ ! -z "${FILES_CHANGED}" ]]
 then
