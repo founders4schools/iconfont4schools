@@ -37,5 +37,8 @@
     "gulp-watch": "^4.3.5",
     "swig": "^1.4.2",
     "version-bump-prompt": "^4.0.0"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
   }
 }
