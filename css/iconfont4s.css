@@ -216,3 +216,24 @@
 
 .if4s-voucher:before {
   content: "\EA43"; }
+
+.if4s-arrow-down-circle:before {
+  content: "\EA44"; }
+
+.if4s-arrow-up-circle:before {
+  content: "\EA45"; }
+
+.if4s-check-circle:before {
+  content: "\EA46"; }
+
+.if4s-office-worker:before {
+  content: "\EA47"; }
+
+.if4s-past:before {
+  content: "\EA48"; }
+
+.if4s-upcoming:before {
+  content: "\EA49"; }
+
+.if4s-warning-circle:before {
+  content: "\EA4A"; }
