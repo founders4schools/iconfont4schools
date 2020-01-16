@@ -55,7 +55,7 @@ gulp.task('iconfont', function () {
     .pipe(gulp.dest('fonts/'));
 });
 
-gulp.task('build', ['iconfont']);
+gulp.task('build', gulp.series('iconfont'));
 
 gulp.task('watch', function () {
   watch(['assets/templates/*', 'assets/*.svg'], batch(function (events, done) {
