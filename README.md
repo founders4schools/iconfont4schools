@@ -51,7 +51,7 @@ need to create a tag on Github, but make sure to keep a clean versioning:
 We use [`version-bump-prompt`](https://www.npmjs.com/package/version-bump-prompt) for that,
 which is installed locally. You can run it directly with [npx](https://github.com/zkat/npx):
 
-    npx bump --lock --commit --tag [--major|--minor|--patch ]
+    npx bump [major|minor|patch] --commit --tag
 
 As you might expect this will commit & tag your new version. Omit the commit/tag options 
 if you want to look at what's going on. Once it looks good, push your changes with the 
